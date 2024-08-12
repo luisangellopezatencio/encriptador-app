@@ -168,6 +168,23 @@ main{
   color: #495057;
 }
 
+footer{
+  background-color: var(--color-secundario);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.redes-sociales{
+  display: flex;
+  gap: 24px;
+  padding-block: 24px;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+
 @media (max-width: 930px) {
   .contenido__output__img{
     display: none;
