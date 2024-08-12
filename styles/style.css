@@ -1,5 +1,11 @@
 
 
+:root{
+  --color-primario: #0A3871;
+  --color-secundario: #D8DFE8;
+  --color-terciario: #F3F5FC;
+}
+
 /* Box sizing rules */
 html {
   box-sizing: border-box;
@@ -20,15 +26,85 @@ body{
     position: relative;
 }
 
+/* header mas logo */
 header{
-    display: inline-block;
-    position: relative;
-    top: 40px;
-    left: 40px;
+    position: absolute;
+    top: 4%;
+    left: 3%;
+    z-index: 10;
 }
 
+/* main */
 main{
    width: 100vw;
    height: 100vh;
-   background-color: aquamarine;
+   background-color: var(--color-terciario);
+   padding-left: 17%;
+   /* posicionamiento */
+   display: flex;
+   justify-content: space-between;
+}
+
+/* Banner input */
+.contenido__input{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-top: 16%;
+    padding-bottom: 72px;
+}
+
+.contenido__input label{
+  position: absolute;
+}
+
+.contenido__input textarea{
+  height: 80%;
+  border: none;
+  resize: none;
+  background-color: var(--color-terciario);
+  cursor: text;
+}
+.contenido__input textarea:focus{
+  outline: none;
+}
+.contenido__input label{
+  cursor: text;
+}
+.contenido__input>:first-child{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  position: relative;
+}
+.contenido__input>:nth-child(2){
+  display: flex;
+  gap: 8px;
+  padding-block: 1px;
+  margin-bottom: 16px;
+}
+
+
+/* Botones de input */
+.contenido__input__botones{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.contenido__input__botones button{
+  width: 328px;
+  padding: 24px;
+  border-radius: 24px;
+}
+
+.contenido__input__botones>button:nth-child(1){
+  background-color: var(--color-primario);
+  border: none;
+  color: white;
+}
+
+.contenido__input__botones>button:nth-child(2){
+  background-color: var(--color-secundario);
+  border: var(--color-primario) 1px solid;
+  color: var(--color-primario);
 }
