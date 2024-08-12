@@ -95,6 +95,7 @@ main{
   width: 328px;
   padding: 24px;
   border-radius: 24px;
+  cursor: pointer;
 }
 
 .contenido__input__botones>button:nth-child(1){
