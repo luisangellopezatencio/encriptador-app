@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="./styles/style.css"/>
+  </head>
+  <body>
+    <header><img src="./assets/Logo.svg" alt="logo de alura" /></header>
+    <main>
+      <section class="contenido__input">
+        <div class="contenido__input__botones">
+          <label for="texto-entrada"
+            >Ingrese el texto a encriptar/desencriptar aquí</label
+          >
+          <textarea name="texto-entrada" id="texto-entrada"> </textarea>
+          <div>
+            <img
+              class="contenido__input__advertencia__img"
+              src="./assets/advertencia.svg"
+              alt="Advertencia solo letras minusculas y sin tilde"
+            />
+            <p class="contenido__input__advertencia__img">
+              Solo letras minusculas y sin tilde
+            </p>
+          </div>
+          <button
+            id="btn-encriptar"
+            class="contenido__input__btn"
+            aria-label="Encriptar"
+          >
+            Encriptar
+          </button>
+          <button
+            id="btn-desencriptar"
+            class="contenido__input__btn"
+            aria-label="Desencriptar"
+          >
+            Desencriptar
+          </button>
+        </div>
+      </section>
+      <section class="contenido__output">
+        <img src="./assets/Muñeco.png" alt="Imagen de Joven buscando pistas" />
+        <p class="contenido__output__mensaje">Ningún mensaje fue encontrado</p>
+        <p class="contenido__output__mensaje_2">
+          Ingrese el texto que desea encriptar/desencriptar
+        </p>
+        <button
+          id="btn-copiar"
+          class="contenido__output__btn"
+          aria-label="Copiar"
+          hidden
+        >
+          Copiar
+        </button>
+      </section>
+    </main>
+    <footer>
+      <ul class="redes-sociales">
+        <li>
+          <a href="#" aria-label="Sígueme en Twitter"
+            ><img src="./assets/twitter_icon.svg" alt="Twitter"
+          /></a>
+        </li>
+        <li>
+          <a href="#" aria-label="Conéctame en LinkedIn"
+            ><img src="./assets/linkedin_icon.svg" alt="LinkedIn"
+          /></a>
+        </li>
+        <li>
+          <a href="#" aria-label="Visita mi Instagram"
+            ><img src="./assets/instagram_icon.svg" alt="Instagram"
+          /></a>
+        </li>
+        <li>
+          <a href="#" aria-label="Visita mi GitHub"
+            ><img src="./assets/github_icon.svg" alt="GitHub"
+          /></a>
+        </li>
+      </ul>
+      <p class="copyright">© Copyright. Luis Angel Lopez Atencio All rights reserved.</p>
+    </footer>
+  </body>
+</html>
