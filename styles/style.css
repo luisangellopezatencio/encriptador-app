@@ -1,0 +1,34 @@
+
+
+/* Box sizing rules */
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* body */
+body{
+    position: relative;
+}
+
+header{
+    display: inline-block;
+    position: relative;
+    top: 40px;
+    left: 40px;
+}
+
+main{
+   width: 100vw;
+   height: 100vh;
+   background-color: aquamarine;
+}
