@@ -153,6 +153,9 @@ main{
   flex-direction: column;
   justify-content: center;
 }
+.spaceBetween{
+  justify-content: space-between;
+}
 .contenido__output p{
   text-align: center;
 }

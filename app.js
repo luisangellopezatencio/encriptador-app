@@ -5,6 +5,7 @@ const textoSalida = document.querySelector("#texto-salida");
 const svg = document.querySelector("#svg");
 const mensaje = document.querySelector("#mensaje");
 const btnCopiar = document.querySelector("#btn-copiar");
+const contenidoOutput = document.querySelector(".contenido__output");
 
 let toggle = false;
 let contador = 0;
@@ -15,11 +16,13 @@ function mostrarOcultarContenido() {
         mensaje.style.display = "none";
         svg.style.display = "none";
         btnCopiar.style.display = "block";
+        contenidoOutput.classList.add("spaceBetween");
         toggle = true;
     } else {
         mensaje.style.display = "block";
         svg.style.display = "block";
         btnCopiar.style.display = "none";
+        contenidoOutput.classList.remove("spaceBetween");
         toggle = false;
     }
 }
