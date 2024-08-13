@@ -124,6 +124,10 @@ main{
   font-weight: 400;
   font-size: 1rem;
 }
+.contenido__output__btn{
+  width: 100%;
+  padding-block: 15px;
+}
 
 .contenido__input__botones>button:nth-child(1){
   background-color: var(--color-primario);
@@ -168,6 +172,7 @@ main{
   font-size: 1rem;
   font-weight: 400;
   color: #495057;
+  overflow: auto;
 }
 
 footer{
@@ -215,6 +220,9 @@ footer{
 
   .contenido__output__mensaje_2{
     margin: 16px 0 0 0;
+    padding-bottom: 25px;
+    max-height: 150px;
+    overflow: auto;
   }
 }
 
