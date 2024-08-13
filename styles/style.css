@@ -175,6 +175,20 @@ main{
   overflow: auto;
 }
 
+.contenido__output__btn{
+    background-color: white;
+    margin-bottom: 32px;
+    padding: 24px;
+    border-radius: 24px;
+    border: var(--color-primario) 1px solid;
+
+    font-family: var(--fuente-primaria);
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--color-primario);
+    cursor: pointer;
+}
+
 footer{
   background-color: var(--color-secundario);
   width: 100%;
