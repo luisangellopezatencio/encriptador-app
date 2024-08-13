@@ -208,6 +208,12 @@ footer{
   flex-wrap: wrap;
 }
 
+.redes-sociales li:hover{
+  position: relative;
+  transition: bottom 2s ease-in-out;
+  bottom: 10px;
+}
+
 /* Tablet */
 @media (max-width: 930px) {
 
