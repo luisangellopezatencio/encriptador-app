@@ -83,6 +83,17 @@ function desencriptar(texto) {
   }
 }
 
+function copiarAlPortapapeles(texto) {
+  navigator.clipboard
+    .writeText(texto)
+    .then(() => {
+      alert("Texto copiado al portapapeles");
+    })
+    .catch((err) => {
+      alert("Error al copiar al portapapeles: ", err);
+    });
+}
+
 botonEncriptar.addEventListener("click", () => {
   const textoEncriptado = encriptar(textoEntrada.value);
   textoSalida.textContent = textoEncriptado;
@@ -103,6 +114,10 @@ botonDesencriptar.addEventListener("click", () => {
   contador++;
 });
 
+btnCopiar.addEventListener("click", () => {
+  copiarAlPortapapeles(textoSalida.innerHTML);
+  console.log(textoSalida.textContent);
+});
 const borrarTexto = () => {
   textoEntrada.value = "";
 };
