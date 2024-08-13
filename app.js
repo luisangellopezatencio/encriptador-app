@@ -44,13 +44,42 @@ function encriptar(texto) {
         return "ufat";
     }
   });
-  console.log(textoEncriptado);
   return textoEncriptado;
+}
+
+function desencriptar(texto) {
+  const re = new RegExp(/ai|enter|imes|ober|ufat/, "gi");
+  var textoDesencriptado = "";
+  textoDesencriptado = texto.replace(re, (match) => {
+    switch (match) {
+      case "ai":
+        return "a";
+      case "enter":
+        return "e";
+      case "imes":
+        return "i";
+      case "ober":
+        return "o";
+      case "ufat":
+        return "u";
+    }
+  });
+  return textoDesencriptado;  
 }
 
 botonEncriptar.addEventListener("click", () => {
   const textoEncriptado = encriptar(textoEntrada.value);
   textoSalida.textContent = textoEncriptado;
+  textoEntrada.focus();
+  if (contador == 0){
+    mostrarOcultarContenido();
+  }
+  contador++;
+});
+
+botonDesencriptar.addEventListener("click", () => {
+  const textoDesencriptado = desencriptar(textoEntrada.value);
+  textoSalida.textContent = textoDesencriptado;
   textoEntrada.focus();
   if (contador == 0){
     mostrarOcultarContenido();
