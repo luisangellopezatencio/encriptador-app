@@ -249,3 +249,15 @@ footer{
     left: 0%;
   }
 }
+
+@media (max-width: 360px) {
+  .contenido__input label{
+    font-size: 1.5rem;
+    padding: 20px 0px 0px 20px;
+    margin-left: 20px;
+  }
+  .contenido__input>:nth-child(2){
+    margin-top: 50px;
+    margin-left: 50px;
+  }
+}
