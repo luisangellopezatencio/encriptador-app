@@ -110,6 +110,7 @@ main{
 /* Botones de input */
 .contenido__input__botones{
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 24px;
 }
@@ -158,6 +159,7 @@ main{
   font-weight: 700;
   font-size: calc((24/16)*1rem);
   color: #343A40;
+  overflow: auto;
 }
 
 .contenido__output__mensaje_2{
@@ -184,9 +186,41 @@ footer{
   flex-wrap: wrap;
 }
 
-
+/* Tablet */
 @media (max-width: 930px) {
+
+  main{
+    flex-direction: column;
+    align-items: center;
+    padding-inline: 40px;
+  }
+
+  .contenido__input{
+    padding-top: 20%;
+    padding-bottom: 0;
+  }
+  .contenido__output{
+    width: 95%;
+    padding: 32px;
+    margin: 40px;
+  }
+
   .contenido__output__img{
     display: none;
+  }
+
+  .contenido__output__mensaje{
+    margin: 0;
+  }
+
+  .contenido__output__mensaje_2{
+    margin: 16px 0 0 0;
+  }
+}
+
+@media (max-width: 580px) {
+  header{
+    top: 0.5%;
+    left: 0%;
   }
 }
