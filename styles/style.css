@@ -74,11 +74,8 @@ main{
 .contenido__input:focus-within label {
   display: none;
 }
-.contenido__input label{
-  cursor: text;
-}
 
-.contenido__input label, .contenido__input textarea{
+.contenido__input textarea::placeholder, .contenido__input textarea{
   font-family: var(--fuente-primaria);
   font-weight: 400;
   font-size: 2rem;
