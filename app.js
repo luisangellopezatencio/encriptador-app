@@ -11,7 +11,7 @@ let toggle = false;
 let contador = 0;
 
 function validar(texto) {
-  const re = /[A-ZÁÉÍÓÚÜáéíóúü]/g;
+  const re = /[A-ZÁÉÍÓÚÜáéíóúü!@#$%^&*()_+\-=\[\]{};':"\\|,.<>?~`]/g;
   return re.test(texto);
 }
 
@@ -33,7 +33,9 @@ function mostrarOcultarContenido() {
 
 function encriptar(texto) {
   if (validar(texto)) {
-    alert("Solo se permiten letras minusculas y sin tilde");
+    alert(
+      "No acepto caracteres especiales, solo letras minusculas y sin tilde"
+    );
     texto.value = "";
     return;
   } else {
@@ -59,7 +61,9 @@ function encriptar(texto) {
 
 function desencriptar(texto) {
   if (validar(texto)) {
-    alert("Solo se permiten letras minusculas y sin tilde");
+    alert(
+      "No acepto caracteres especiales, solo letras minusculas y sin tilde"
+    );
     texto.value = "";
     return;
   } else {
