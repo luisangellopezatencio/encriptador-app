@@ -11,6 +11,9 @@
 <strong>¡Crea tu propio mundo secreto!</strong> Nuestra app te permite cifrar y descifrar mensajes al instante, compartiendo códigos solo con tus amigos más cercanos. ¡Diversión asegurada y privacidad garantizada!
 
 ## Demostración
+![Pagina de inicio](image-1.png)
+
+![imagen con texto encriptado](image.png)
 
 [Clica aqui para ver la demo](https://imgur.com/VWh5xBM)
 
