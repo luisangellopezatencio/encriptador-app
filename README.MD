@@ -15,8 +15,6 @@
 
 ![imagen con texto encriptado](image.png)
 
-[Clica aqui para ver la demo](https://imgur.com/VWh5xBM)
-
 ## Acceso al proyecto
 
 [Visita la pagina web](https://luisangellopezatencio.github.io/encriptador-app/)
